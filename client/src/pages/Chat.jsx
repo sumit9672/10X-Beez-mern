@@ -50,7 +50,7 @@ function Chat() {
         // GET CONVERSATIONS
         // -------------------------
         const conversationResponse = await fetch(
-          '${import.meta.env.VITE_API_URL}/api/chat/conversations',
+          `${import.meta.env.VITE_API_URL}/api/chat/conversations`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -224,7 +224,7 @@ function Chat() {
       // SEND MESSAGE TO SERVER
       // -------------------------
       const response = await fetch(
-        '${import.meta.env.VITE_API_URL}/api/chat/message',
+        `${import.meta.env.VITE_API_URL}/api/chat/message`,
         {
           method: "POST",
 

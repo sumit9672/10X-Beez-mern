@@ -19,7 +19,7 @@ function ChatList() {
 
       try {
         const response = await fetch(
-          '${import.meta.env.VITE_API_URL}/api/chat/conversations',
+          `${import.meta.env.VITE_API_URL}/api/chat/conversations`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
