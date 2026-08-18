@@ -11,7 +11,7 @@ function MyAds() {
   const fetchMyAds = async () => {
     try {
       const response = await fetch(
-        "${import.meta.env.VITE_API_URL}/api/ads/my-ads",
+        '${import.meta.env.VITE_API_URL}/api/ads/my-ads',
         {
           headers: {
             Authorization: `Bearer ${token}`,
