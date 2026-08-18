@@ -25,7 +25,7 @@ function Home() {
         params.append("category", categoryValue);
       }
 
-      const url = `http://localhost:5000/api/ads?${params.toString()}`;
+      const url = `${import.meta.env.VITE_API_URL}/api/ads?${params.toString()}`;
 
       const response = await fetch(url);
       const data = await response.json();
@@ -186,7 +186,7 @@ function Home() {
                   {ad.images &&
                   ad.images.length > 0 ? (
                     <img
-                      src={`http://localhost:5000${ad.images[0]}`}
+                      src={`${import.meta.env.VITE_API_URL}${ad.images[0]}`}
                       alt={ad.title}
                     />
                   ) : (

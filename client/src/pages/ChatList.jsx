@@ -19,7 +19,7 @@ function ChatList() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/chat/conversations",
+          "${import.meta.env.VITE_API_URL}/api/chat/conversations",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -152,7 +152,7 @@ function ChatList() {
                   <div className="conversation-image">
                     {ad?.images?.length > 0 ? (
                       <img
-                        src={`http://localhost:5000${ad.images[0]}`}
+                        src={`${import.meta.env.VITE_API_URL}${ad.images[0]}`}
                         alt={ad.title}
                       />
                     ) : (

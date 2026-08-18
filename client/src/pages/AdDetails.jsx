@@ -35,7 +35,7 @@ function AdDetails() {
     const fetchAd = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/ads/${id}`
+          `${import.meta.env.VITE_API_URL}/api/ads/${id}`
         );
 
         const data = await response.json();
@@ -74,7 +74,7 @@ function AdDetails() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/chat/conversation",
+        "${import.meta.env.VITE_API_URL}/api/chat/conversation",
         {
           method: "POST",
           headers: {
@@ -120,7 +120,7 @@ function AdDetails() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/ads/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/ads/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -212,7 +212,7 @@ function AdDetails() {
 
               {images.length > 0 ? (
                 <img
-                  src={`http://localhost:5000${images[selectedImage]}`}
+                  src={`${import.meta.env.VITE_API_URL}${images[selectedImage]}`}
                   alt={ad.title}
                 />
               ) : (
@@ -241,7 +241,7 @@ function AdDetails() {
                     }
                   >
                     <img
-                      src={`http://localhost:5000${image}`}
+                      src={`${import.meta.env.VITE_API_URL}${image}`}
                       alt={`${ad.title} ${index + 1}`}
                     />
                   </button>

@@ -40,7 +40,7 @@ function EditAd() {
     const fetchAd = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/ads/${id}`
+          `${import.meta.env.VITE_API_URL}/api/ads/${id}`
         );
 
         const data = await response.json();
@@ -244,7 +244,7 @@ function EditAd() {
       });
 
       const response = await fetch(
-        `http://localhost:5000/api/ads/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/ads/${id}`,
         {
           method: "PUT",
           headers: {
@@ -505,7 +505,7 @@ function EditAd() {
                       >
 
                         <img
-                          src={`http://localhost:5000${image}`}
+                          src={`${import.meta.env.VITE_API_URL}${image}`}
                           alt={`Existing ${
                             index + 1
                           }`}

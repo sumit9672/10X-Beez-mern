@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io(import.meta.env.VITE_API_URL);
 
 function Chat() {
   const { conversationId } = useParams();
@@ -50,7 +50,7 @@ function Chat() {
         // GET CONVERSATIONS
         // -------------------------
         const conversationResponse = await fetch(
-          "http://localhost:5000/api/chat/conversations",
+          "${import.meta.env.VITE_API_URL}/api/chat/conversations",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -88,7 +88,7 @@ function Chat() {
         // GET MESSAGES
         // -------------------------
         const response = await fetch(
-          `http://localhost:5000/api/chat/messages/${conversationId}`,
+          `${import.meta.env.VITE_API_URL}/api/chat/messages/${conversationId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -224,7 +224,7 @@ function Chat() {
       // SEND MESSAGE TO SERVER
       // -------------------------
       const response = await fetch(
-        "http://localhost:5000/api/chat/message",
+        "${import.meta.env.VITE_API_URL}/api/chat/message",
         {
           method: "POST",
 
