@@ -165,13 +165,13 @@ function ChatList() {
 
                     <h3>
                       {ad?.title ||
-                        "10X BEEZ Ad"}
+                        "10X Bazaar Ad"}
                     </h3>
 
                     <p className="conversation-user">
                       👤{" "}
                       {otherUser?.name ||
-                        "10X BEEZ User"}
+                        "10X Bazaar User"}
                     </p>
 
                     <p className="last-message">

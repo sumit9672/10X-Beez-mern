@@ -221,7 +221,7 @@ function CreateAd() {
           <h1>Post an Ad</h1>
 
           <p>
-            Sell your item quickly and easily on 10X BEEZ.
+            Sell your item quickly and easily on 10X Bazaar.
           </p>
         </div>
 

@@ -322,7 +322,7 @@ function EditAd() {
 
           <p>
             Update your advertisement information
-            on 10X BEEZ.
+            on 10X Bazaar.
           </p>
         </div>
 

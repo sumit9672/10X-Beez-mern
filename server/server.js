@@ -61,7 +61,7 @@ app.use("/api/chat", chatRoutes);
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "10X BEEZ API is running 🚀",
+    message: "10X Bazaar API is running 🚀",
   });
 });
 

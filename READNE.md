@@ -1,6 +1,6 @@
-# 10X BEEZ
+# 10X Bazaar
 
-10X BEEZ is a modern full-stack classified marketplace application.
+10X Bazaar is a modern full-stack classified marketplace application.
 
 ## Tech Stack
 

@@ -318,7 +318,7 @@ function AdDetails() {
             </p>
 
             <p className="seller-id">
-              10X BEEZ User
+              10X Bazaar User
             </p>
 
           </div>

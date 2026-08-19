@@ -90,7 +90,7 @@ function MyAds() {
           <h1>My Ads</h1>
 
           <p>
-            Manage the items you've posted on 10X BEEZ.
+            Manage the items you've posted on 10X Bazaar.
           </p>
         </div>
 

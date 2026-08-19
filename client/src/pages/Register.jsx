@@ -69,7 +69,7 @@ function Register() {
         </div>
 
         <h1>Create Account 🚀</h1>
-        <p>Join 10X BEEZ and start buying & selling.</p>
+        <p>Join 10X Bazaar and start buying & selling.</p>
 
         {message && <div className="error-message">{message}</div>}
 

@@ -334,7 +334,7 @@ function Chat() {
 
             <p>
               {conversation?.ad?.title ||
-                "10X BEEZ Ad"}
+                "10X Bazaar Ad"}
             </p>
           </div>
 
