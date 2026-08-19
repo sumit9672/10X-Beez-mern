@@ -24,12 +24,13 @@ connectDB();
 // =========================
 // MIDDLEWARE
 // =========================
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://one0x-beez-marketplace.onrender.com"
+  ],
+  credentials: true
+}));
 
 app.use(express.json());
 
@@ -79,10 +80,13 @@ app.get("/api/test", (req, res) => {
 // =========================
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://one0x-beez-marketplace.onrender.com"
+    ],
     methods: ["GET", "POST"],
-    credentials: true,
-  },
+    credentials: true
+  }
 });
 
 io.on("connection", (socket) => {
